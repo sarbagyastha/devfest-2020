@@ -1,0 +1,12 @@
+builders:
+  copy_with:
+    import: 'package:generators/builder.dart'
+    builder_factories:
+      - copyWithGenerator
+    build_extensions:
+      .dart:
+      - copy_with.g.part
+    auto_apply: dependents
+    build_to: cache
+    applies_builders:
+      - source_gen|combining_builder
