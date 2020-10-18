@@ -1,0 +1,14 @@
+name: client
+description: A client application to use the generators.
+version: 1.0.0
+author: Sarbagya Dhaubanjar
+
+environment:
+  sdk: '>=2.8.0 <3.0.0'
+
+dev_dependencies:
+  build_runner:
+  generators:
+    path: ../generators
+  json_serializable:
+  pedantic: ^1.9.0
